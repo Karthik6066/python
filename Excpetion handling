@@ -1,0 +1,12 @@
+import math
+number=int(input('Enter Your Number:'))
+valid=False
+while not valid:
+      try:
+            print('The Factorial of',number,'is',math.factorial(number))
+            valid=True
+      except ValueError:
+            print('Negative Numbers are not allowed')
+            number=int(input('Enter Your Number:'))
+      finally:
+            print('Exit Thank you')
